@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+.root {
+    --background-color: #e7ded1;
+    --font-color: #4a3c2c;
+}
+
+@font-face {
+    font-family: "Architects_Daughter";
+    src: url(../resources/architectsDaughter.ttf) format('truetype');
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: "Architects_Daughter", sans-serif;
+    color: var(--font-color);
+    font-size: 150%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-weight: bold;
+}
+
+.title {
+    align-items: center;
+    font-size: 200%;
+}
+
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.recipe-link {
+    height: 200px;
+    width: 400px;
+    align-items: center;
+    display: block;
+    margin: 10px;
+}
+
+.recipes > .recipe-link:nth-child(5) {
+    grid-column: span 2;
+}
+
+.image-wrapper {
+    width: 100%;
+    height: 200px;  
+    border: 5px solid var(--font-color);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.text-wrapper {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    transform: translate(-25%, -25%);
+    padding: 0.5rem;
+    align-items: center;
+    font-weight: bold;
+    color: var(--background-color);
+    display: none;
+}
+
+.link-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.recipe-link:hover .link-image{
+    transform: scale(1.1);
+    filter: blur(15px);
+}
+
+.recipe-link:hover .text-wrapper {
+    display: block;
+}
+
+.github-footer {
+    margin-top: 100px;
+}
