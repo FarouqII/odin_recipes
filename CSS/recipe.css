@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+.root {
+    --background-color: #e7ded1;
+    --font-color: #4a3c2c;
+}
+
+@font-face {
+    font-family: "Architects_Daughter";
+    src: url(../resources/architectsDaughter.ttf) format('truetype');
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: "Architects_Daughter", sans-serif;
+    color: var(--font-color);
+    font-size: 150%;
+    text-align: center;
+}
