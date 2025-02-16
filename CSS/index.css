@@ -12,6 +12,11 @@
     src: url(../resources/architectsDaughter.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: "Amethysta";
+    src: url(../resources/amethysta.ttf) format('truetype');
+}
+
 body {
     background-color: var(--background-color);
     font-family: "Architects_Daughter", sans-serif;
@@ -29,6 +34,7 @@ a {
 .title {
     align-items: center;
     font-size: 200%;
+    font-family: "Amethysta", sans-serif;
 }
 
 .recipes {

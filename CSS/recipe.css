@@ -12,10 +12,69 @@
     src: url(../resources/architectsDaughter.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: "Amethysta";
+    src: url(../resources/amethysta.ttf) format('truetype');
+}
+
 body {
     background-color: var(--background-color);
     font-family: "Architects_Daughter", sans-serif;
     color: var(--font-color);
     font-size: 150%;
     text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+img {
+    margin-top: 50px;
+    overflow: hidden;
+    border: 5px solid var(--font-color);
+    border-radius: 15px;
+}
+
+section {
+    border: 4px solid var(--font-color);
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+h3 {
+    font-family: "Amethysta", sans-serif;
+}
+
+ul{
+    text-align: justify;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+hr {
+    border: 1.5px solid var(--font-color);
+    width: 90%;
+}
+
+.home-bar {
+    border: 3px solid var(--font-color);
+    border-radius: 5px;
+    background-color: #4a3c2c40;
+}
+
+.home-button {
+    display: block;
+    width: 100%;
+}
+
+.home-bar:hover .home-button{
+    background-color: var(--font-color);
+    color: var(--background-color);
+    transition:color .2s ease-in;
+    transition:background-color .2s;
 }
