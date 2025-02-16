@@ -23,6 +23,8 @@ body {
     color: var(--font-color);
     font-size: 150%;
     text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 a {
